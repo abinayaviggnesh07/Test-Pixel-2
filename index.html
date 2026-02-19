@@ -1,6 +1,6 @@
 <head>
 <!-- Meta Pixel Code -->
-<!-- <script>
+ <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
   n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -10,26 +10,10 @@
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
 
-   fbq('init', '345');
- fbq('init', '');
- fbq('init', 'abc123');
-</script>  -->
-  
-<script>
- !function(f,b,e,v,n,t,s)
- {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
- n.callMethod.apply(n,arguments):n.queue.push(arguments)};
- if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
- n.queue=[];fbq('init', '923160783544011');}
-</script>
-<script>
- !function(f,b,e,v,n,t,s)
- {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
- n.callMethod.apply(n,arguments):n.queue.push(arguments)};
- if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='1.0';
- n.queue=[];fbq('init', '25965262926438593');}</script>
-
-
+   fbq('init', '923160783544011');
+// fbq('init', '');
+// fbq('init', 'abc123');
+</script>  
 
 <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=923160783544011&ev=PageView&noscript=1"
@@ -53,7 +37,7 @@
 
 <script type="text/javascript">
 document.getElementById('addToWishlistButton').addEventListener('click', function() {
-  fbq('track', 'AddToWishlist');
+  fbq('track', {foo: 'bar'});
 }, false);
 
 document.getElementById('addToCartButton').addEventListener('click', function() {
