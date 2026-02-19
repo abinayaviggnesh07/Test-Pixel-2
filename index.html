@@ -1,6 +1,6 @@
 <head>
 <!-- Meta Pixel Code -->
-<script>
+<!-- <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
   n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -14,7 +14,21 @@
  fbq('init', '');
  fbq('init', 'abc123');
 
+</script>  -->
+ <script>
+ !function(f,b,e,v,n,t,s)
+ {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+ n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+ if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+ n.queue=[];fbq('init', '923160783544011');}(window,document,'script','');
 </script>
+<script>
+ // Manually override version to simulate conflict
+ var oldFbq = window.fbq;
+ // Load another pixel script from a different source that has n.version='1.0'
+</script>
+
+
 <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=923160783544011&ev=PageView&noscript=1"
 /></noscript>
