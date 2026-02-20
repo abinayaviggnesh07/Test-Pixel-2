@@ -10,7 +10,9 @@
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
  fbq('init', '923160783544011');
- fbq('track', 'MyCustomEvent');
+ fbq('init', '1234567890');
+ fbq('track', 'Purchase', {value: 10, currency: 'USD'}, {eventID: {foo: 'bar'}});
+
  // Should use: fbq('trackCustom', 'MyCustomEvent');
 </script>
  
