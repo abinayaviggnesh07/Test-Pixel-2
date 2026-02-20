@@ -11,12 +11,9 @@
   'https://connect.facebook.net/en_US/fbevents.js');
  fbq('init', '923160783544011');
 
- fbq('track');            // No event name
- fbq('track', '');        // Empty string event name
- fbq('track', undefined); // Undefined event name
-
-
-
+ fbq('init', '1234567890');
+ fbq('track', 'Purchase', {value: 10, currency: 'USD'}, {eventID: ''});
+ fbq('track', 'Purchase', {value: 10, currency: 'USD'}, {eventID: null});
 
 </script>  
 
