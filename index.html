@@ -9,8 +9,12 @@
   t.src=v;s=b.getElementsByTagName(e)[0];
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
- fbq('init', 12345);         // pixelID should be a string of digits
- fbq('track', {foo: 'bar'});
+ fbq('init', '923160783544011');
+ // Purchase requires 'value' and 'currency'
+ fbq('track', 'Purchase');
+ // or missing just currency:
+ fbq('track', 'Purchase', {value: 29.99});
+
 
 
 </script>  
