@@ -11,7 +11,8 @@
   'https://connect.facebook.net/en_US/fbevents.js');
  fbq('init', '923160783544011');
  fbq('init', '1234567890');
- fbq('track', 'Purchase', {value: 10, currency: 'USD'}, {eventID: {foo: 'bar'}});
+ fbq('track', 'Purchase', {value: -10.50, currency: 'USD'});
+
 
  // Should use: fbq('trackCustom', 'MyCustomEvent');
 </script>
