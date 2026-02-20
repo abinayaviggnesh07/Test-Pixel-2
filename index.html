@@ -9,11 +9,9 @@
   t.src=v;s=b.getElementsByTagName(e)[0];
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '923160783544011');
- // Invalid currency code
- fbq('track', 'Purchase', {value: 29.99, currency: 'INVALID'});
- // Invalid value (non-numeric)
-// fbq('track', 'Purchase', {value: 'abc', currency: 'USD'});
+ fbq('init', 12345);         // pixelID should be a string of digits
+ fbq('track', {foo: 'bar'});
+
 
 </script>  
 
