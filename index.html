@@ -10,13 +10,10 @@
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
  fbq('init', '923160783544011');
- fbq('init', '923160783544011', {
-   em: 'not-an-email',
- });
 
+ fbq('consent', 'approve');  // Not a valid consent action
+ fbq('consent', 'deny');     // Not a valid consent action
 
-
- // Should use: fbq('trackCustom', 'MyCustomEvent');
 </script>
  
 
