@@ -10,8 +10,9 @@
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '1535327404243046');
- fbq('set', 'codeless', 'false', '1234567890');
- // When Meta's Event Setup Tool tries to activate on this page
+// fbq('init', '1234567890');
+ // Track on a pixel that was never initialized
+ fbq('trackSingle', '9999999999', 'PageView');
 
 </script>
 <noscript><img height="1" width="1" style="display:none"
