@@ -11,9 +11,8 @@
   'https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '1535327404243046');
 
- // If 'currency' has a standardParamChecks rule requiring exact ISO codes:
- fbq('track', 'Purchase', {value: 10, currency: 'NOTACURRENCY'});
-
+ // If 'ssn' or 'social_security' are on the unwanted params list:
+ fbq('track', 'Lead', {ssn: '123-45-6789'});
 
 </script>
 <noscript><img height="1" width="1" style="display:none"
