@@ -10,9 +10,10 @@
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '1535327404243046');
-// fbq('init', '1234567890');
- // Track on a pixel that was never initialized
- fbq('trackSingle', '2375101249578910', 'PageView');
+
+ // If 'currency' has a standardParamChecks rule requiring exact ISO codes:
+ fbq('track', 'Purchase', {value: 10, currency: 'NOTACURRENCY'});
+
 
 </script>
 <noscript><img height="1" width="1" style="display:none"
