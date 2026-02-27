@@ -11,8 +11,10 @@
   'https://connect.facebook.net/en_US/fbevents.js');
  fbq('init', '1535327404243046');
 
- // If 'currency' has a standardParamChecks rule requiring exact ISO codes:
- fbq('track', 'Purchase', {value: 10, currency: 'NOTACURRENCY'});
+ fbq('track');            // No event name
+ fbq('track', '');        // Empty string event name
+ fbq('track', undefined); // Undefined event name
+
 
 </script>
 <noscript><img height="1" width="1" style="display:none"
