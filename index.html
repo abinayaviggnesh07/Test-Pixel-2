@@ -10,11 +10,8 @@
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
  fbq('init', '1535327404243046');
-
- fbq('track');            // No event name
- fbq('track', '');        // Empty string event name
- fbq('track', undefined); // Undefined event name
-
+// Track on a pixel that was never initialized
+ fbq('trackSingle', '9999999999', 'PageView');
 
 </script>
 <noscript><img height="1" width="1" style="display:none"
