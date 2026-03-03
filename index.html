@@ -10,7 +10,9 @@
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
  fbq('init', '1535327404243046');
- fbq('track', 'Purchase', {value: 10, currency: 'USD'}, {eventID: {foo: 'bar'}});
+ // Do NOT call fbq('init', '9999999999') first
+ fbq('set', 'agent', 'myAgent', '9999999999');
+
 
 
 </script>
