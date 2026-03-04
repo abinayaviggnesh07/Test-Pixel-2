@@ -11,7 +11,9 @@
   'https://connect.facebook.net/en_US/fbevents.js');
  fbq('init', '1535327404243046');
 
- fbq('set', 'unsupportedKey', 'someValue', '1535327404243046');
+ fbq('track', 'Purchase', {value: 10, currency: 'USD'}, {eventID: ''});
+ fbq('track', 'Purchase', {value: 10, currency: 'USD'}, {eventID: null});
+
 
   fbq('track', 'PageView');
 
